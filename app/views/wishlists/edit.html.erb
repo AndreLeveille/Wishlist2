@@ -1,0 +1,11 @@
+<h1>Edit a wish list</h1>
+
+
+<%= form_with(model: @wishlist, local: true) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, placeholder: "Name" %>
+    <%= f.submit 'update list' %>
+  </div>
+  
+<% end %>
